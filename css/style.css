@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+#Home {
+    position: fixed;
+    width: 99%;
+    background-color: rgba(0, 0, 0, 0.148);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    margin-left: 100px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.container a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.container a:hover {
+    color: rgba(248, 112, 248, 0.759);
+}
+
+/* Background section */
+.hero-section {
+
+    height: 70vh;
+    background: url(/image/friut\ background.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-weight: bolder;
+    color: black;
+    text-align: left;
+}
+
+/* Overlay for dark effect */
+.hero-section::before {
+    /* content: ""; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Text content */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.hero-content p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+
+section {
+    padding: 20px 50px;
+
+}
+
+/* .card-first-all {
+
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+} */
+/* ------------------------review--------------------------------- */
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(94, 30, 30, 0.619);
+    width: 40%;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.card-pn {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 16px rgba(180, 18, 18, 0.454);
+}
+
+h1 {
+
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+/* ------------------------------about us--------------- */
+#About-us {
+    height: 90vh;
+    /* background: #b41515; */
+    color: black
+}
+
+.crad-picture {
+
+    display: flex;
+}
+
+.crad-img1 {
+    width: 100%;
+    height: 50px;
+}
+
+.crad-text1 {
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+/* ----------------------------------our menu--------------------------- */
+
+#our-menu {
+    /* background: #777; */
+    color: black
+}
+
+.btn {
+    background-color: rgba(0, 206, 209, 0.325);
+    border-radius: 4px;
+
+}
+
+.menu-fruits {
+    margin-top: 40px;
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+
+}
+
+.crad-menu img {
+    width: 200px;
+    height: 200px;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crad-menu {
+    background-color: #dcd4d443;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.crad-menu:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(238, 124, 124, 0.525);
+}
