@@ -8,7 +8,8 @@ body {
 #Home {
     position: fixed;
     width: 99%;
-    background-color: rgba(0, 0, 0, 0.148);
+    height: 5vh;
+    background: #d9d9d9;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -20,13 +21,6 @@ body {
     align-items: center;
     gap: 20px;
 }
-
-.logo {
-    margin-left: 100px;
-    font-weight: bolder;
-    font-size: 40px;
-}
-
 .container a {
     font-size: 20px;
     text-decoration: none;
@@ -39,7 +33,6 @@ body {
 
 /* Background section */
 .hero-section {
-
     height: 70vh;
     background: url(/image/friut\ background.jpg) no-repeat center center/cover;
     display: flex;
@@ -49,10 +42,20 @@ body {
     color: black;
     text-align: left;
 }
+.pic{
+    height: 10vh;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.pic p{
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
 
 /* Overlay for dark effect */
 .hero-section::before {
-    /* content: ""; */
     position: absolute;
     top: 0;
     left: 0;
@@ -87,30 +90,18 @@ body {
     border-radius: 5px;
     text-decoration: none;
 }
-
-
-
+/* -----------------------------home page--------------------------------- */
 section {
     padding: 20px 50px;
-
 }
 
-/* .card-first-all {
-
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-} */
 /* ------------------------review--------------------------------- */
-/* Card Container */
 .card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-
 
 .card {
     display: flex;
@@ -188,7 +179,6 @@ h1 {
 /* ----------------------------------our menu--------------------------- */
 
 #our-menu {
-    /* background: #777; */
     color: black
 }
 
@@ -223,4 +213,11 @@ h1 {
 .crad-menu:hover {
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 8px 16px rgba(238, 124, 124, 0.525);
+}
+/* ---------------form------------- */
+.form{
+    width: 30%;
+    height: 40vh;
+    background: #d9d9d9;
+   
 }
