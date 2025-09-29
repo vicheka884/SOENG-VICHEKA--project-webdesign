@@ -569,64 +569,78 @@ button:hover {
 
 /* ----------footer-------------- */
 footer {
-    background: #222;
-    color: #fff;
+    background: #2d2d2d;
+    color: white;
     padding: 40px 20px;
-    margin-top: 30px;
 }
 
-.footer-section {
+.footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
+    gap: 20px;
 }
 
 .footer-column {
-    flex: 1 1 220px;
-    margin: 15px;
+    width: 22%;
+    /* Laptop/Desktop default */
+    margin-bottom: 20px;
 }
 
 .footer-column h3 {
-    color: #00bfff;
     margin-bottom: 15px;
-    font-size: 18px;
+    color: #ffcc00;
+    /* fruit color highlight */
 }
 
 .footer-column ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .footer-column ul li {
-    margin: 8px 0;
-    font-size: 14px;
+    margin-bottom: 8px;
 }
 
 .footer-column ul li a {
     text-decoration: none;
-    color: #ccc;
+    color: white;
     transition: color 0.3s;
-    display: flex;
-    align-items: center;
-}
-
-.footer-column ul li a img {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
 }
 
 .footer-column ul li a:hover {
-    color: #00bfff;
+    color: #ff6600;
 }
 
-.social-icons {
-    padding-left: 0;
+.social-icons img:hover {
+    transform: scale(1.2);
 }
 
-.social-icons li {
-    margin-bottom: 10px;
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+@media (min-width: 993px) {
+    .footer-column {
+        width: 22%;
+    }
+}
+@media (max-width: 992px) and (min-width: 601px) {
+    .footer-column {
+        width: 45%;
+    }
+}
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-column {
+        width: 100%;
+    }
 }
